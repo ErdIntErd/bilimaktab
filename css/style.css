@@ -49,6 +49,7 @@ main {
     margin-top: 75px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .task__oneright-answer {
     cursor: pointer;
