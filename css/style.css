@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --first_color: #223B54;
+    --second_color: #0D1521;
+    --third_color: #243C5D;
+    --fourth_color: #89afdb;
+    --fifth_color: #D9E8F5;
+    --wrong_fourth_color: #db8989;
+    --wrong_fifth_color: #f5d9d9;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+@font-face {
+    font-family: "firaSansReg";
+    src: url("../fonts/FiraSans-Regular.ttf");
+}
+
+
+
+.hdr {
+    display: flex;
+    justify-content: center;
+}
+.progress {
+    height: 20px;
+    margin-top: 15px;
+    border-radius: 15px;
+}
+.progressbar {
+    background-color: var(--third_color);
+}
+.task {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+}
+.task__title {
+    text-align: center;
+    font-family: "firaSansReg";
+    font-weight: 600;
+}
+.task__oneright-box {
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+}
+.task__oneright-answer {
+    cursor: pointer;
+    padding: 20px;
+    border: 3px solid var(--fifth_color);
+    border-radius: 15px;
+    box-shadow: 0px 5px var(--fifth_color);
+    color: var(--first_color);
+    font-family: "firaSansReg";
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+.task__oneright-answer:hover {
+    background: var(--fifth_color);
+    border: 3px solid var(--fourth_color);
+    box-shadow: 0px 5px var(--fourth_color);
+}
+.task__oneright-answer:active {
+    box-shadow: none;
+    transform: translateY(5px);
+}
